@@ -6,6 +6,9 @@ Copy the file "foobar.txt" from the local host to a remote host
 
 `scp foobar.txt your_username@remotehost.edu:/some/remote/directory`
 
+To copy a directory:
+`scp -r "path/to/directory" your_username@remotehost.edu:/some/remote/directory`
+
 ## SSH keys
 
 http://www.thegeekstuff.com/2008/11/3-steps-to-perform-ssh-login-without-password-using-ssh-keygen-ssh-copy-id/
