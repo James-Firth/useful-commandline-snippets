@@ -1,3 +1,5 @@
+#Useful Snippets of commandline code
+
 ### SCP
 
 References: http://www.hypexr.org/linux_scp_help.php
@@ -24,4 +26,9 @@ Copy your ssh key to another machine to avoid typing in passwords
 untar
 `tar -xvf filename`
 
+
+## Grep
+
+Use status code to determine if that line of text exists in that file.
+`grep -Fxq "line of text" /path/to/file` 
 
