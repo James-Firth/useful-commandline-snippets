@@ -32,3 +32,8 @@ untar
 Use status code to determine if that line of text exists in that file.
 `grep -Fxq "line of text" /path/to/file` 
 
+# Useful CLI programs to install/uses
+
+* Woof
+  * Simple file server
+
