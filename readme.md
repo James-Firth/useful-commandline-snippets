@@ -36,4 +36,7 @@ Use status code to determine if that line of text exists in that file.
 
 * Woof
   * Simple file server
-
+* mpv
+  * Commandline media player
+* tmux
+  * Terminal multiplexer. Better than screen (debatably) and useful for servers.
