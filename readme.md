@@ -26,6 +26,11 @@ Copy your ssh key to another machine to avoid typing in passwords
 untar
 `tar -xvf filename`
 
+## Process Management
+
+Find all the processes that contain a word, such as all python processes
+`ps aux | grep <search string>` - shows a lot of output including the path of the file and args (more detailed)
+`ps -e | grep <search string>` - shows the PID and the process name (much cleaner)
 
 ## Grep
 
