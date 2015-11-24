@@ -58,6 +58,13 @@ Use status code to determine if that line of text exists in that file.
   * Terminal multiplexer. Better than screen (debatably) and useful for servers.
   * 
   
+
+## Git - Useful snippets and common gotchas
+
+* [Oh crap I commited to the current branch but I wanted to make a new one](http://stackoverflow.com/questions/1628563/move-the-most-recent-commits-to-a-new-branch-with-git)
+* 
+
+
 # TODO
 
 * Eventually split this into better chunks/files.
