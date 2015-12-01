@@ -57,6 +57,8 @@ Use status code to determine if that line of text exists in that file.
 * tmux
   * Terminal multiplexer. Better than screen (debatably) and useful for servers.
   * 
+* [jq](https://stedolan.github.io/jq/download/)
+  * like `sed` for JSON data
   
 
 ## Git - Useful snippets and common gotchas
