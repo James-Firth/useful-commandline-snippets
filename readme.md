@@ -24,6 +24,8 @@ Copy your ssh key to another machine to avoid typing in passwords
 
 `ssh-copy-id -i ~/.ssh/id_rsa.pub remote-host`
 
+Alternatively use my script `the_keymaker.sh` to automate this process a bit. Also maintains a nicer ssh config file.
+
 
 ## Tar
 
