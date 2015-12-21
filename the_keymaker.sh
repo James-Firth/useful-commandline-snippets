@@ -7,7 +7,7 @@
 read -p "Enter host name you wish to generate keys for: " hostname
 read -p "Enter a shortname for the host. eg 'sn' Allows for ssh sn. Leave blank for none: " shortname
 read -p "Enter username for remote host: " remoteuser
-read -p "Enter email: " email
+read -p "Enter your email to be associated with this key: " email
 
 if [ "$shortname" == "" ]; then
 	shortname="$hostname"
