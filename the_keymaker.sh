@@ -31,6 +31,7 @@ Host $shortname
 	User $remoteuser
 	HostName $hostname
 	IdentityFile $key_filepath
+	IdentitiesOnly yes
 	VisualHostKey yes" >> $ssh_config_path
 
 	echo "Key generation complete."
