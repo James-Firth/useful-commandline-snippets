@@ -3,6 +3,13 @@
 # General Information o7
 
 * The `^` (carat) symbol is often used to denote the `Ctrl` button so `^C` means `Ctrl+C`
+* `NO_PUBKEY` error? Make sure to add keys via something like 
+  
+  ```bash
+wget http://download.opensuse.org/repositories/PATH/TO/KEY/Release.key
+
+apt-key add - < Release.key
+```
 
 ### SCP
 
@@ -67,7 +74,6 @@ Use status code to determine if that line of text exists in that file.
 
 * [Oh crap I commited to the current branch but I wanted to make a new one](http://stackoverflow.com/questions/1628563/move-the-most-recent-commits-to-a-new-branch-with-git)
 * 
-
 
 # TODO
 
