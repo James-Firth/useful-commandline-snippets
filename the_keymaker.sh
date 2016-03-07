@@ -54,7 +54,8 @@ Host $shortname
 	VisualHostKey yes" >> $ssh_config_path
 
 	echo "Key generation complete."
-	echo "Now copying to remote server for passwordless login..."
+	echo "Attempting to copy public key to remote server for passwordless login."
+	echo "You will need to enter the password for $remoteuer@$hostname below..."
 	ssh-copy-id -i "$key_filepath.pub" $remoteuser@$hostname
 else
 	echo "Error with key generation, exiting with status code.";
