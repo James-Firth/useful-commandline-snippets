@@ -1,7 +1,12 @@
 #!/bin/bash
 
-
+#               The Keymaker 
+#                  o——m
+#
 # Generates and pushes ssh keys for remote machines.
+# 
+# Setup: make executable via `chmod u+x the_keymaker.sh`
+# Run: `./the_keymaker.sh` and enter information based on prompts.
 
 
 read -p "Enter host name you wish to generate keys for: " hostname
