@@ -6,6 +6,9 @@
 # Generates and pushes ssh keys for remote machines.
 # 
 # Setup: make executable via `chmod u+x the_keymaker.sh`
+#        Optional: OS-dependant. These have been tested on Ubuntu.
+#                  1) Place in /usr/local/bin/ and rename so it is available in your path; or
+#                  2) Create an alias to reference this file.
 # Run: `./the_keymaker.sh` and enter information based on prompts.
 #
 # This tool was created to help developers maintain a 
