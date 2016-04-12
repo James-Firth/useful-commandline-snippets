@@ -57,6 +57,9 @@ command1 & command2 & command3
 Use status code to determine if that line of text exists in that file.
 `grep -Fxq "line of text" /path/to/file` 
 
+Search a directory recursively for a term. (Ignores case, only searches text files, and shows a line above and below the matched term)
+`grep -ainr -B 1 -A 1 "TERM" /DIR/TO/SEARCH`
+
 # Useful CLI programs to install/uses
 
 * Woof
