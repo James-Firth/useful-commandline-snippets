@@ -11,3 +11,9 @@
     'ctrl-shift-tab ^ctrl': 'unset!'
     'ctrl-shift-tab': 'pane:show-previous-item'
 ```
+
+* On Linux, use the floowing keymap when selecting multiple lines to put a cursor on each one
+```coffeescript
+'.platform-win32 .editor, .platform-linux .editor':
+  'ctrl-shift-L': 'editor:split-selections-into-lines'
+ ```
