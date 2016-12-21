@@ -10,6 +10,7 @@ wget http://download.opensuse.org/repositories/PATH/TO/KEY/Release.key
 
 apt-key add - < Release.key
 ```
+* Use `^L` (`Ctrl+L`) to clear the terminal, even if using a sub-program like mongo or python's interactive shells.
 
 ### SCP
 
