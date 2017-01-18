@@ -12,6 +12,31 @@ apt-key add - < Release.key
 ```
 * Use `^L` (`Ctrl+L`) to clear the terminal, even if using a sub-program like mongo or python's interactive shells.
 
+### Atom
+
+See my [config notes](config_notes.md) file for some useful Atom tweaks (more coming in the future)
+
+Shortcuts
+* `ctrl+shift+P`
+  * Open the command palette
+* `ctrl+shift+L`
+  * Switch the syntax highlighting language for the file you have open
+* `ctrl+k` then `<Arrow Key>`
+  * Copy/split panes
+* `ctrl+P`
+  * Open another file (in your projects)
+
+Useful packages
+* file-icons
+* language-docker (if you use docker)
+* linter
+* linter-eslint (if you use ES2015-styl JS)
+* markdown-scroll-sync
+* markdown-writer
+* minimap
+* sort-lines
+* tidy-markdown (debatable)
+
 ### SCP
 
 References: http://www.hypexr.org/linux_scp_help.php
