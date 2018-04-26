@@ -1,6 +1,6 @@
-#Useful Snippets of commandline code
+# Useful Snippets of commandline code
 
-# General Information o7
+## General Information o7
 
 * The `^` (carat) symbol is often used to denote the `Ctrl` button so `^C` means `Ctrl+C`
 * `NO_PUBKEY` error? Make sure to add keys via something like 
@@ -13,7 +13,7 @@ apt-key add - < Release.key
 
 * Use `^L` (`Ctrl+L`) to clear the terminal, even if using a sub-program like mongo or python's interactive shells.
 
-### Atom
+## Atom
 
 See my [config notes](config_notes.md) file for some useful Atom tweaks (more coming in the future)
 
@@ -38,7 +38,7 @@ Useful packages
 * sort-lines
 * tidy-markdown (debatable)
 
-### SCP
+## SCP
 
 References: http://www.hypexr.org/linux_scp_help.php
 
@@ -87,7 +87,7 @@ Use status code to determine if that line of text exists in that file.
 Search a directory recursively for a term. (Ignores case, only searches text files, and shows a line above and below the matched term)
 `grep -ainr -B 1 -A 1 "TERM" /DIR/TO/SEARCH`
 
-# Useful CLI programs to install/uses
+## Useful CLI programs to install/uses
 
 * Woof
   * Simple file server
@@ -105,7 +105,7 @@ Search a directory recursively for a term. (Ignores case, only searches text fil
 * [Oh crap I commited to the current branch but I wanted to make a new one](http://stackoverflow.com/questions/1628563/move-the-most-recent-commits-to-a-new-branch-with-git)
 * 
 
-# TODO
+## TODO
 
 * Eventually split this into better chunks/files.
 * Add useful snippets for diffregits
