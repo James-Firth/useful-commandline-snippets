@@ -5,11 +5,12 @@
 * The `^` (carat) symbol is often used to denote the `Ctrl` button so `^C` means `Ctrl+C`
 * `NO_PUBKEY` error? Make sure to add keys via something like 
   
-  ```bash
+```bash
 wget http://download.opensuse.org/repositories/PATH/TO/KEY/Release.key
 
 apt-key add - < Release.key
 ```
+
 * Use `^L` (`Ctrl+L`) to clear the terminal, even if using a sub-program like mongo or python's interactive shells.
 
 ### Atom
