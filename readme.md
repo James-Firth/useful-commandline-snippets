@@ -87,6 +87,10 @@ Use status code to determine if that line of text exists in that file.
 Search a directory recursively for a term. (Ignores case, only searches text files, and shows a line above and below the matched term)
 `grep -ainr -B 1 -A 1 "TERM" /DIR/TO/SEARCH`
 
+## Moving files
+If you want to move everything in the current working directory into a sub-folder named `newdir` and want an exit status code of `0`, you can't use `mv` because it will try to move `newdir` into itself and error. Instead use this
+`find . -maxdepth 1 ! -path . | grep -v "newdir" | xargs -i mv {} newdir`
+
 ## Useful CLI programs to install/uses
 
 * Woof
