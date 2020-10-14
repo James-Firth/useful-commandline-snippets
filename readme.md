@@ -13,30 +13,14 @@ apt-key add - < Release.key
 
 * Use `^L` (`Ctrl+L`) to clear the terminal, even if using a sub-program like mongo or python's interactive shells.
 
-## Atom
+* `<(echo "hello world")` will put the results of your process in a temp file and pass the file path to a different process, `cat <(echo "Hello world")` for instance will invoke something like `cat /proc/self/fd/11`. Very useful for diffs, etc.
 
-See my [config notes](config_notes.md) file for some useful Atom tweaks (more coming in the future)
+## File Mangling
 
-Shortcuts
-* `ctrl+shift+P`
-  * Open the command palette
-* `ctrl+shift+L`
-  * Switch the syntax highlighting language for the file you have open
-* `ctrl+k` then `<Arrow Key>`
-  * Copy/split panes
-* `ctrl+P`
-  * Open another file (in your projects)
+Accidentally spew the entire HTTP header, including the Authentication header, to a log file?
 
-Useful packages
-* file-icons
-* language-docker (if you use docker)
-* linter
-* linter-eslint (if you use ES2015-styl JS)
-* markdown-scroll-sync
-* markdown-writer
-* minimap
-* sort-lines
-* tidy-markdown (debatable)
+This will look for `Api-Key: THEKEY`and replace `THEKEY` with a redaction, in-place.
+`gawk -i inplace '{IGNORECASE=1; r = gensub(/(Api-Key:)\s*(.+)$/, "\\1 ***REDACTED***", "g"); print r;}' oops.log`
 
 ## SCP
 
