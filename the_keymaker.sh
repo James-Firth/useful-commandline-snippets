@@ -168,9 +168,9 @@ done
 
 #Get email to use in the ssh key
 while [ "$email" == "" ]; do
-	read -r -p "Enter your email to be associated with this key: " email
+	read -r -p "Enter your email to be associated with this key (or anything it's just a comment): " email
 	if [ "$email" == "" ]; then
-		echo -e "[\e[31mError\e[39m] Missing remail!";
+		echo -e "[\e[31mError\e[39m] Missing email!";
 	fi
 done
 
