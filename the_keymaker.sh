@@ -8,10 +8,11 @@
 # NOTE: When using Github.com set your user to git and do not set a shortname
 # 
 # Setup: make executable via `chmod u+x the_keymaker.sh`
-#        Optional: OS-dependant. These have been tested on Ubuntu.
-#                  1) Place in /usr/local/bin/ and rename so it is available in your path; or
-#                  2) Create an alias to reference this file.
-# Run: `./the_keymaker.sh` and enter information based on prompts.
+#        Optional: OS-dependant. These have been tested on Ubuntu and MacOS.
+#                  1) Place in /usr/local/bin/ and rename to whatever you want it is available in your PATH (I call it makekey)
+#			or
+#                  2) Create an alias to reference this file somewhere your PATH will pick it up
+# Run: `the_keymaker.sh` (or your alias) and enter information based on prompts.
 #
 # This tool was created to help developers maintain a 
 # succinct and relatively safe ssh config file.
