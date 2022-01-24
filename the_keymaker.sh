@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#               The Keymaker v2.6.1
+#               The Keymaker v2.6.2
 #                   o——m
 #
 # Generates ssh keys per remote host, creates good configs, and optionally pushes to the host.
@@ -8,11 +8,10 @@
 # NOTE: When using Github.com set your user to git and do not set a shortname
 # 
 # Setup: make executable via `chmod u+x the_keymaker.sh`
-#        Optional: OS-dependant. These have been tested on Ubuntu and MacOS.
-#                  1) Place in /usr/local/bin/ and rename to whatever you want it is available in your PATH (I call it makekey)
-#			or
-#                  2) Create an alias to reference this file somewhere your PATH will pick it up
-# Run: `the_keymaker.sh` (or your alias) and enter information based on prompts.
+#        Optional: OS-dependant. These have been tested on Ubuntu.
+#                  1) Place in /usr/local/bin/ and rename so it is available in your path; or
+#                  2) Create an alias to reference this file.
+# Run: `./the_keymaker.sh` and enter information based on prompts.
 #
 # This tool was created to help developers maintain a 
 # succinct and relatively safe ssh config file.
@@ -188,7 +187,6 @@ key_filepath="$HOME/.ssh/$key_filename"
 
 # defaults
 alg_flags="-t ed25519"
-passphrase_flags='-N ""'
 
 # responses
 key_pass="n"
@@ -204,13 +202,12 @@ if [[ "$rsa" == "y" || "$rsa" == "Y" ]]; then
 	alg_flags="-t rsa -b 4096"
 fi
 
-
+# using a variable to hold the flag '-N ""' was causing issues
 if [[ "$key_pass" == "y" || "$key_pass" == "Y" ]]; then
-	passphrase_flags=""
+	ssh-keygen $alg_flags -C "$email" -f "$key_filepath"
+else
+	ssh-keygen $alg_flags -C "$email" -N "" -f "$key_filepath"
 fi
-
-ssh-keygen $alg_flags -C "$email" $passphrase_flags -f "$key_filepath"
-
 keygen_status=$?
 
 #If the key was created successfully echo the host info to the config file
